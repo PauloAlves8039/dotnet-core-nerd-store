@@ -1,4 +1,5 @@
-﻿using NerdStore.Core.DomainObjects;
+﻿using NerdStore.Catalogo.Domain.Entities.ValueObject;
+using NerdStore.Core.DomainObjects;
 using System;
 
 namespace NerdStore.Catalogo.Domain.Entities
@@ -13,9 +14,10 @@ namespace NerdStore.Catalogo.Domain.Entities
         public DateTime DataCadastro { get; private set; }
         public string Imagem { get; private set; }
         public int QuantidadeEstoque { get; private set; }
+        public Dimensoes Dimensoes { get; private set; }
         public Categoria Categoria { get; private set; }
 
-        public Produto(string nome, string descricao, bool ativo, decimal valor, Guid categoriaId, DateTime dataCadastro, string imagem)
+        public Produto(string nome, string descricao, bool ativo, decimal valor, Guid categoriaId, DateTime dataCadastro, string imagem, Dimensoes dimensoes)
         {
             Nome = nome;
             Descricao = descricao;
@@ -23,6 +25,7 @@ namespace NerdStore.Catalogo.Domain.Entities
             Valor = valor;
             DataCadastro = dataCadastro;
             Imagem = imagem;
+            Dimensoes = dimensoes;
 
             Validar();
         }
