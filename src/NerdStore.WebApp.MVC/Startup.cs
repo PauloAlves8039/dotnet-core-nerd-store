@@ -10,7 +10,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NerdStore.Catalogo.Application.AutoMapper;
+using NerdStore.Catalogo.Data.Context;
 using NerdStore.WebApp.MVC.Data;
+using NerdStore.WebApp.MVC.Setup;
 
 namespace NerdStore.WebApp.MVC
 {
@@ -35,6 +37,10 @@ namespace NerdStore.WebApp.MVC
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddDbContext<CatalogoContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -44,6 +50,8 @@ namespace NerdStore.WebApp.MVC
             services.AddAutoMapper(typeof(DomainToViewModelMappingProfile), typeof(ViewModelToDomainMappingProfile));
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterServices();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
