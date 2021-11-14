@@ -1,10 +1,11 @@
-﻿using System;
+﻿using NerdStore.Core.Data;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace NerdStore.Vendas.Domain.Entities.Interfaces
 {
-    public interface IPedidoRepository 
+    public interface IPedidoRepository : IRepository<Pedido>
     {
         Task<Pedido> ObterPorId(Guid id);
         Task<IEnumerable<Pedido>> ObterListaPorClienteId(Guid clienteId);
