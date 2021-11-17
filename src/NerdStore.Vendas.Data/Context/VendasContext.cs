@@ -2,6 +2,7 @@
 using NerdStore.Core.Communication.Mediator;
 using NerdStore.Core.Data;
 using NerdStore.Core.Messages;
+using NerdStore.Vendas.Data.Extensions;
 using NerdStore.Vendas.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,8 @@ namespace NerdStore.Vendas.Data.Context
                     entry.Property("DataCadastro").IsModified = false;
                 }
             }
+
+            await _mediatorHandler.PublicarEventos(this);
 
             return await base.SaveChangesAsync() > 0;
         }
