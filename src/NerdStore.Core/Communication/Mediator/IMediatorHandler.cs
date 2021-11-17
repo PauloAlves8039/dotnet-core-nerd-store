@@ -1,5 +1,4 @@
-﻿using NerdStore.Core.DomainObjects;
-using NerdStore.Core.Messages;
+﻿using NerdStore.Core.Messages;
 using NerdStore.Core.Messages.CommonMessages;
 using System.Threading.Tasks;
 

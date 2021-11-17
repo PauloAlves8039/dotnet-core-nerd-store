@@ -80,7 +80,7 @@ namespace NerdStore.WebApp.MVC
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Vitrine}/{action=Index}/{id?}");
             });
         }
     }
