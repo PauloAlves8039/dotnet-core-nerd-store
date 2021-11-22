@@ -4,6 +4,7 @@ using NerdStore.Core.DomainObjects.DTO;
 using NerdStore.Core.Extensions;
 using NerdStore.Core.Messages;
 using NerdStore.Core.Messages.CommonMessages;
+using NerdStore.Core.Messages.CommonMessages.IntegrationEvents;
 using NerdStore.Vendas.Application.Events;
 using NerdStore.Vendas.Domain.Entities;
 using NerdStore.Vendas.Domain.Entities.Interfaces;

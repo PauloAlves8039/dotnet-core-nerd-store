@@ -1,10 +1,9 @@
 ﻿using NerdStore.Core.DomainObjects.DTO;
-using NerdStore.Core.Messages;
 using System;
 
-namespace NerdStore.Vendas.Application.Events
+namespace NerdStore.Core.Messages.CommonMessages.IntegrationEvents
 {
-    public class PedidoIniciadoEvent : Event
+    public class PedidoIniciadoEvent : IntegrationEvent
     {
         public Guid PedidoId { get; private set; }
         public Guid ClienteId { get; private set; }
