@@ -1,4 +1,4 @@
-﻿namespace NerdStore.Pagamentos.Business.Business.Enums
+﻿namespace NerdStore.Pagamentos.Business
 {
     public enum StatusTransacao
     {

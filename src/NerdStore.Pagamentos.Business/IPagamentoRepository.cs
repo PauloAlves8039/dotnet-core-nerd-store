@@ -1,6 +1,6 @@
 ﻿using NerdStore.Core.Data;
 
-namespace NerdStore.Pagamentos.Business.Business
+namespace NerdStore.Pagamentos.Business
 {
     public interface IPagamentoRepository : IRepository<Pagamento>
     {
