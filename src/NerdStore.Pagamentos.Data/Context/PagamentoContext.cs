@@ -13,7 +13,7 @@ namespace NerdStore.Pagamentos.Data.Context
     {
         private readonly IMediatorHandler _mediatorHandler;
 
-        public PagamentoContext(DbContextOptions<PagamentoContext> options, IMediatorHandler rebusHandler) : base()
+        public PagamentoContext(DbContextOptions<PagamentoContext> options, IMediatorHandler rebusHandler) : base(options)
         {
             _mediatorHandler = rebusHandler ?? throw new ArgumentNullException(nameof(rebusHandler));
         }
