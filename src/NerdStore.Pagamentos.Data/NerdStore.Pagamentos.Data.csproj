@@ -15,10 +15,4 @@
     <ProjectReference Include="..\NerdStore.Pagamentos.Business\NerdStore.Pagamentos.Business.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Mappings\" />
-    <Folder Include="Context\" />
-    <Folder Include="Repository\" />
-  </ItemGroup>
-
 </Project>
