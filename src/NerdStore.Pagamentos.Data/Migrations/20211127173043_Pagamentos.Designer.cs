@@ -10,8 +10,8 @@ using NerdStore.Pagamentos.Data.Context;
 namespace NerdStore.Pagamentos.Data.Migrations
 {
     [DbContext(typeof(PagamentoContext))]
-    [Migration("20211126002118_InitialPay")]
-    partial class InitialPay
+    [Migration("20211127173043_Pagamentos")]
+    partial class Pagamentos
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

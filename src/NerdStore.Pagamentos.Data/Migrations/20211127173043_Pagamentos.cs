@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace NerdStore.Pagamentos.Data.Migrations
 {
-    public partial class InitialPay : Migration
+    public partial class Pagamentos : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
