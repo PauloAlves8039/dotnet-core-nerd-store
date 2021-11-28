@@ -2,7 +2,7 @@
 
 ## :computer: Projeto
 
-Repositório de uma aplicação web para simular uma loja virtual, aplicando a manipulação de registros de um catálogo com produtos e seus respectivas categorias.
+Repositório de uma aplicação web para simular uma loja virtual, aplicando a manipulação de registros de um catálogo com produtos e seus respectivas categorias, usando conceitos referentes a modelagem de domínio rico, o código fonte do projeto foi baseado no curso [Modelagem de Domínios Ricos](https://desenvolvedor.io/curso-online-modelagem-de-dominios-ricos). 
 
 ## :wrench: Recursos Utilizados
 
@@ -17,6 +17,11 @@ Repositório de uma aplicação web para simular uma loja virtual, aplicando a m
 ## :floppy_disk: Clonar Repositório
 
 `git clone https://github.com/PauloAlves8039/dotnet-core-nerd-store.git`
+
+## :camera: Screenshot
+
+<p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-nerd-store/blob/master/src/NerdStore.WebApp.MVC/wwwroot/Images/screenshot.PNG" 
+   title="Administração de Produtos" /></p>
 
 ## Author
 
